@@ -91,7 +91,7 @@ if __name__ == "__main__":
     required.add_argument('-b','--bucket', help='Bucket Name', required=True)
     required.add_argument('-c','--control',help='Control Image', required=True)
     required.add_argument('-i','--image', help='Test Image', required=True)
-    required.add_argument('-p','--percentage', help='Confidence Percentage', type=int, required=True)
+    parser.add_argument('-p','--percentage', help='Confidence Percentage', type=int, default=97)
     args = parser.parse_args()
     params = "{bucket: %s, control: %s, image: %s, percentage: %s}"%(args.bucket,args.control,args.image,args.percentage)
     handler.getLog(2,FILENAME,params)
