@@ -1,0 +1,36 @@
+2020-11-10 20:28:35.592510 >> Inicialización de Programa
+	|---2020-11-10 20:28:35.593892 >> Parámetros Ingresados: {bucket: pds-aws-rekognition, control: control-image.jpg, image: test5-image.jpg, percentage: 97}
+	|---2020-11-10 20:28:35.594093 >> Obteniendo texto de: control-image.jpg
+		|---2020-11-10 20:28:37.752569 Palabra {IT'S} aceptada con un 99.782066 % de confianza
+		|---2020-11-10 20:28:37.752663 Palabra {MONDAY} aceptada con un 99.982544 % de confianza
+		|---2020-11-10 20:28:37.752699 Palabra {but} aceptada con un 99.984261 % de confianza
+		|---2020-11-10 20:28:37.752730 Palabra {KEEP} aceptada con un 99.920914 % de confianza
+		|---2020-11-10 20:28:37.752760 Palabra {SMILING.} aceptada con un 99.720695 % de confianza
+		|---2020-11-10 20:28:37.752790 Palabra {IT'S} aceptada con un 99.782066 % de confianza
+		|---2020-11-10 20:28:37.752820 Palabra {MONDAY} aceptada con un 99.982544 % de confianza
+		|---2020-11-10 20:28:37.752849 Palabra {but} aceptada con un 99.984261 % de confianza
+		|---2020-11-10 20:28:37.752879 Palabra {KEEP} aceptada con un 99.920914 % de confianza
+		|---2020-11-10 20:28:37.752908 Palabra {SMILING.} aceptada con un 99.720695 % de confianza
+		|---2020-11-10 20:28:37.752936 Obtención de palabras realizada
+	|---2020-11-10 20:28:37.754517 >> Obteniendo texto de: test5-image.jpg
+		|---2020-11-10 20:28:40.073991 Palabra {123RF} rechazada por un 93.110847 % de confianza
+		|---2020-11-10 20:28:40.074133 Palabra {123RF} rechazada por un 91.335999 % de confianza
+		|---2020-11-10 20:28:40.074188 Palabra {It's Monday} rechazada por un 95.855850 % de confianza
+		|---2020-11-10 20:28:40.074220 Palabra {123PS} rechazada por un 83.851440 % de confianza
+		|---2020-11-10 20:28:40.074250 Palabra {But Keep Smiling} aceptada con un 99.506905 % de confianza
+		|---2020-11-10 20:28:40.074280 Palabra {123RF} rechazada por un 96.529556 % de confianza
+		|---2020-11-10 20:28:40.074310 Palabra {123RF} rechazada por un 96.789513 % de confianza
+		|---2020-11-10 20:28:40.074339 Palabra {123RF} rechazada por un 93.110847 % de confianza
+		|---2020-11-10 20:28:40.074369 Palabra {123RF} rechazada por un 91.335999 % de confianza
+		|---2020-11-10 20:28:40.074399 Palabra {Monday} aceptada con un 99.960686 % de confianza
+		|---2020-11-10 20:28:40.074428 Palabra {It's} rechazada por un 91.751022 % de confianza
+		|---2020-11-10 20:28:40.074457 Palabra {Smiling} aceptada con un 99.553909 % de confianza
+		|---2020-11-10 20:28:40.074486 Palabra {Keep} aceptada con un 99.283806 % de confianza
+		|---2020-11-10 20:28:40.074516 Palabra {123PS} rechazada por un 83.851440 % de confianza
+		|---2020-11-10 20:28:40.074545 Palabra {But} aceptada con un 99.683006 % de confianza
+		|---2020-11-10 20:28:40.074606 Palabra {123RF} rechazada por un 96.529556 % de confianza
+		|---2020-11-10 20:28:40.074649 Palabra {123RF} rechazada por un 96.789513 % de confianza
+		|---2020-11-10 20:28:40.074679 Obtención de palabras realizada
+	|---2020-11-10 20:28:40.076570 Realizando análisis
+		|--- Resultado: {False}. 80% del texto encontrado
+2020-11-10 20:28:40.076647 >> Ejecución sin errores terminada
