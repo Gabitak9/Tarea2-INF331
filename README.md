@@ -12,7 +12,7 @@ git clone https://github.com/Gabitak9/Tarea2-INF331.git
 
 Realice la instalación de los módulos necesarios con el siguiente comando:
 ```
-pip3 -r install requeriments.txt
+pip3 install -r requeriments.txt
 ```
 
 ### USO DEL PROGRAMA
