@@ -16,7 +16,7 @@ import re
 
 from libs import libLogHandler as handler
 
-FILENAME = 'logs/[LOG] '+str(datetime.datetime.now())
+FILENAME = 'logs/[LOG] '+str(datetime.datetime.now().replace(":","-"))
 
 # -------------------------------------------------------------------------------------
 
