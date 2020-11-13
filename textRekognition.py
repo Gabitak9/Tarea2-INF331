@@ -39,6 +39,7 @@ def getText(bucket,image, percentage):
             if confidence >= percentage:
                 infoLog = 'Palabra {%s} aceptada con un %f %% de confianza'%(line,confidence)
                 handler.getLog(6,FILENAME,infoLog)
+                line = line.split(" ")
                 words.append(line)
             else:
                 infoLog = 'Palabra {%s} rechazada por un %f %% de confianza'%(line,confidence)
@@ -46,24 +47,31 @@ def getText(bucket,image, percentage):
         
         handler.getLog(5,FILENAME,None)
 
+        # Clean Words
+        finalWords = []
+        for word in words:
+            for subWord in word:
+                finalWords.append(subWord)
+
     except Exception as e:
         print(e)
         handler.getLog(3,FILENAME,str(e))
         print("[!] Cerrando programa ... ")
         sys.exit()
 
-    return words
+    return finalWords
 
 def getAnalysis(control, image):
 
     count = 0
     lenControl = len(control)
 
-    control = [re.sub(r'[^(á-ú)*\w*@*]','',x).lower()  for x in control]
-    image = [re.sub(r'[^(á-ú)*\w*@*]','',x).lower() for x in image]
+    control = [re.sub(r'[^(á-ú)*\w*@*]','',x).lower().replace("!","").replace("#","")  for x in control]
+    image = [re.sub(r'[^(á-ú)*\w*@*]','',x).lower().replace("!","").replace("#","") for x in image]
 
     for word in control:
         if word not in image:
+            print("%s not found"%word)
             count += 1
     
     if count == 0:
